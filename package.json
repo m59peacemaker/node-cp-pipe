@@ -1,6 +1,6 @@
 {
   "name": "cp-pipe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pipe stdout and stderr from child processes without typing as much code.",
   "main": "index.js",
   "scripts": {

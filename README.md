@@ -44,7 +44,7 @@ b.stdout.pipe(c.stdin)
 ```
 
 ```js
-cpPipe.err([a, b, c])
+cpPipe.err([a, b, c], process)
 
 a.stderr.pipe(process.stderr)
 b.stderr.pipe(process.stderr)
@@ -53,18 +53,18 @@ c.stderr.pipe(process.stderr)
 
 ## API
 
-### cpPipe.chainToProcess(processes)
+### `cpPipe.chainToProcess(processes)`
 
 - `processes: []` Array of child processes
 
 Pipes the stdout of a prior process from `processes` into the stdout of the next process, chaining the stdouts/stdins together, pipes the stdout of the last process to `process.stdout`, and pipes the stderrs of all `processes` to `process.stderr`.
 
-### cpPipe.outIn(processes)
+### `cpPipe.outIn(processes)`
 
 - `processes: []` Array of child processes
 
 Pipes the stdout of a prior process from `processes` into the stdout of the next process, chaining the stdouts/stdins together.
 
-### cpPipe.err(processes, destProcess)
+### `cpPipe.err(processes, destProcess)`
 
 Pipes the stderrs of all `processes` to `destProcess.stderr`.
