@@ -1,6 +1,6 @@
 {
   "name": "cp-pipe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pipe stdout and stderr from child processes without typing as much code.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "name": "Johnny Hauser",
     "email": "johnnyhauser@gmail.com"
   },
-  "license": "VOL",
+  "license": "CC0-1.0",
   "devDependencies": {
     "tape": "^4.6.2"
   }
